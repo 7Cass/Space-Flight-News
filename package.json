@@ -6,10 +6,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
+    "dev:server": "ts-node-dev --transpile-only server/src/server.ts",
     "build": "tsc && vite build",
     "build:tailwind": "tailwindcss -i ./app/src/styles/tailwind.css -o ./app/dist/tailwind.output.css --watch",
     "preview": "vite preview",
-    "dev:server": "ts-node-dev --transpile-only server/src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "seed": "ts-node-dev ./server/src/database/seed.ts"
   },
